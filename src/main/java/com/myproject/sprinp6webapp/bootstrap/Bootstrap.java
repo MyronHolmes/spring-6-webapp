@@ -48,6 +48,8 @@ public class Bootstrap implements CommandLineRunner {
 
         ericSaved.getBook().add(dddSaved);
         rodSaved.getBook().add(noJBESaved);
+        dddSaved.getAuthors().add(ericSaved);
+        noJBESaved.getAuthors().add(ericSaved);
 
         Publisher publisher = new Publisher();
         publisher.setPublisherName("My Publisher");
